@@ -70,4 +70,19 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
     }
+
+    // protected function mapCustomRoute() {
+
+    //     Route::group([
+    //         'middleware' => ['auths'], 
+    //         'prefix' => 'custom-routes',
+    //         'namespace' => $this->namespace,
+    //     ], function($router) {
+
+    //         return base_path('routes/custom.php');
+
+    //     });
+
+        
+    //}
 }
