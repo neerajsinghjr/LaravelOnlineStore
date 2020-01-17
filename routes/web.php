@@ -1,4 +1,4 @@
-	<?php
+<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -11,16 +11,19 @@
 |
 */
 
-Route::get('/', 'frontend\BaseController@index')->name('front.home');
-
-
+Route::get('/', function() {
+	return view('website.views.index');
+});
 
 Auth::routes();
 
-Route::group(['middleware' => 'auth'], function() {
-
-	Route::get('/home', 'HomeController@index')->name('home');
+/* <!----------------------- Admin Login Routes -------------------------> */
+Route::group([], function() {
 
 });
 
+
+Route::group([], function() {
+
+});
 
