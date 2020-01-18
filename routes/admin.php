@@ -9,8 +9,8 @@
  * the project.
  * 
  */
-
- Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function() {
+ 
+ Route::group(['namespace' => 'Admin', 'as' => 'admin.'], function() {
     
     Route::get('dashboard', 'AdminController@index')->name('dashboard');
     

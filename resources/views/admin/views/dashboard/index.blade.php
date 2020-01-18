@@ -1,3 +1,7 @@
+@extends('admin.layouts.master')
+
+@section('content')
+
 <div class="container-fluid">
     <!-- Bread crumb and right sidebar toggle -->
     <div class="row page-titles">
@@ -205,7 +209,7 @@
                                     <td>$3.9K</td>
                                 </tr>
                                 <tr class="active">
-                                    <td><span class="round"><img src="../assets/images/users/2.jpg" alt="user" width="50" /></span></td>
+                                    <td><span class="round"><img src="{{ asset('admins/asset/images/users/2.jpg') }}" alt="user" width="50" /></span></td>
                                     <td>
                                         <h6>Andrew</h6><small class="text-muted">Project Manager</small></td>
                                     <td>Real Homes</td>
@@ -315,7 +319,7 @@
                 <div class="comment-widgets">
                     <!-- Comment Row -->
                     <div class="d-flex flex-row comment-row">
-                        <div class="p-2"><span class="round"><img src="../assets/images/users/1.jpg" alt="user" width="50"></span></div>
+                        <div class="p-2"><span class="round"><img src="{{ asset('admins/asset/images/users/1.jpg') }}" alt="user" width="50"></span></div>
                         <div class="comment-text w-100">
                             <h5>James Anderson</h5>
                             <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting industry.</p>
@@ -332,7 +336,7 @@
                     </div>
                     <!-- Comment Row -->
                     <div class="d-flex flex-row comment-row active">
-                        <div class="p-2"><span class="round"><img src="../assets/images/users/2.jpg" alt="user" width="50"></span></div>
+                        <div class="p-2"><span class="round"><img src="{{ asset('admins/asset/images/users/2.jpg') }}" alt="user" width="50"></span></div>
                         <div class="comment-text active w-100">
                             <h5>Michael Jorden</h5>
                             <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting industry..</p>
@@ -349,7 +353,7 @@
                     </div>
                     <!-- Comment Row -->
                     <div class="d-flex flex-row comment-row">
-                        <div class="p-2"><span class="round"><img src="../assets/images/users/3.jpg" alt="user" width="50"></span></div>
+                        <div class="p-2"><span class="round"><img src="{{ asset('admins/asset/images/users/3.jpg') }}" alt="user" width="50"></span></div>
                         <div class="comment-text w-100">
                             <h5>Johnathan Doeting</h5>
                             <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting industry.</p>
@@ -366,7 +370,7 @@
                     </div>
                     <!-- Comment Row -->
                     <div class="d-flex flex-row comment-row">
-                        <div class="p-2"><span class="round"><img src="../assets/images/users/4.jpg" alt="user" width="50"></span></div>
+                        <div class="p-2"><span class="round"><img src="{{ asset('admins/asset/images/users/4.jpg') }}" alt="user" width="50"></span></div>
                         <div class="comment-text w-100">
                             <h5>James Anderson</h5>
                             <p class="m-b-5">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has beenorem Ipsum is simply dummy text of the printing and type setting industry..</p>
@@ -437,10 +441,10 @@
                                     <label for="inputSchedule" class=""> <span>Schedule meeting with</span> </label>
                                 </div>
                                 <ul class="assignedto">
-                                    <li><img src="../assets/images/users/1.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Steave"></li>
-                                    <li><img src="../assets/images/users/2.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jessica"></li>
-                                    <li><img src="../assets/images/users/3.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Priyanka"></li>
-                                    <li><img src="../assets/images/users/4.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Selina"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/1.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Steave"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/2.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Jessica"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/3.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Priyanka"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/4.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Selina"></li>
                                 </ul>
                             </li>
                             <li class="list-group-item" data-role="task">
@@ -449,8 +453,8 @@
                                     <label for="inputCall" class=""> <span>Give Purchase report to</span> <span class="label label-light-danger">Today</span> </label>
                                 </div>
                                 <ul class="assignedto">
-                                    <li><img src="../assets/images/users/3.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Priyanka"></li>
-                                    <li><img src="../assets/images/users/4.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Selina"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/3.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Priyanka"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/4.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Selina"></li>
                                 </ul>
                             </li>
                             <li class="list-group-item" data-role="task">
@@ -487,9 +491,9 @@
                                     <label for="inputForward2" class=""> <span>Important tasks</span> <span class="label label-light-success">2 weeks</span> </label>
                                 </div>
                                 <ul class="assignedto">
-                                    <li><img src="../assets/images/users/1.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Steave"></li>
-                                    <li><img src="../assets/images/users/2.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Jessica"></li>
-                                    <li><img src="../assets/images/users/4.jpg" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Selina"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/1.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Steave"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/2.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Jessica"></li>
+                                    <li><img src="{{ asset('admins/asset/images/users/4.jpg') }}" alt="user" data-toggle="tooltip" data-placement="top" title="" data-original-title="Assign to Selina"></li>
                                 </ul>
                             </li>
                         </ul>
@@ -529,28 +533,28 @@
                 <ul class="m-t-20 chatonline">
                     <li><b>Chat option</b></li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                        <a href="javascript:void(0)"><img src="{{ asset('admins/asset/images/users/1.jpg') }}" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg') }}" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg') }}" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg') }}" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg') }}" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg') }}" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg') }}" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                        <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg') }}" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                     </li>
                 </ul>
             </div>
@@ -560,3 +564,5 @@
     <!-- /Right sidebar -->
     
 </div>
+
+@endsection

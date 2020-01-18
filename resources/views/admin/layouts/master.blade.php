@@ -3,7 +3,7 @@
 
 <head>
     <!-- META-TAGS -->
-    @include('admins.includes.meta')
+    @include('admin.includes.meta')
     <!-- /META-TAGS -->
     
     <title>Admin Dashboard | Control Everything Over Single Place</title>

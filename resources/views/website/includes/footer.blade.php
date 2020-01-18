@@ -78,10 +78,8 @@
                         <li><a href="index.html#"><i class="fa fa-cc-discover"></i></a></li>
                         <li><a href="index.html#"><i class="fa fa-cc-amex"></i></a></li>
                     </ul>
-                    <span class="copyright">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://wwww.creativefolders.in/" target="_blank">CreativeFolders.IN</a>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <span class="copyright">                        
+                        Copyright &copy; <script>document.write(new Date().getFullYear());</script> By <a href="https://www.CreativeFolders.IN" target="blank">CreativeFolders.IN</a> | Developed By White Devil.
                     </span>
                 </div>
             </div>

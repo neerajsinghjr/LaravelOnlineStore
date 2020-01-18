@@ -1,3 +1,3 @@
 <footer class="footer">
-    © 2020 CreativeFolders.IN | Developed By WhiteDevil.
+    Copyright © <script> document.write(new Date().getFullYear()); </script> by <a href="https://www.CreativeFolders.IN" target='_blank'>CreativeFolders.IN</a> | Developed By White Devil.
 </footer>
