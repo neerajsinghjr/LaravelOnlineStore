@@ -1,7 +1,6 @@
 @extends('admin.layouts.master')
 
 @section('content')
-
 <div class="container-fluid">
     <!-- Bread crumb and right sidebar toggle -->
     <div class="row page-titles">

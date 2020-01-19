@@ -5,7 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 
-class AdminINotLogin
+class AdminIfNotLogin
 {
     /**
      * Handle an incoming request.
@@ -15,10 +15,10 @@ class AdminINotLogin
      * @return mixed
      */
     public function handle($request, Closure $next, $guard='admin')
-    {
-        // if(!$request->user($guard)) {
-        //     return redirect()->route('admin.login');
-        // }
+    {  
+        if(!$request->user($guard)) {
+            return redirect()->route('admin.login');
+        }
         return $next($request);
     }
 }

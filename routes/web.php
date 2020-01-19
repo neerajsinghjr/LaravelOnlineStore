@@ -11,19 +11,22 @@
 |
 */
 
-Route::get('/', function() {
-	return view('website.views.index');
-});
-
 Auth::routes();
 
 /* <!----------------------- Admin Login Routes -------------------------> */
-Route::group([], function() {
+Route::group(['namespace' => 'Admin\Auth', 'prefix' => 'admin', 'as' => 'admin.'], function() {
+
+	Route::get('/', 'LoginController@showForm')->name('login');
+	Route::post('/', 'LoginController@login')->name('submit');
+	Route::get('/logout', 'LoginController@logout')->name('logout');
 
 });
 
+/* <!----------------------- Website Navigation Routes  -------------------------> */
+Route::group(['namespace' => 'Website', 'as' => 'web.'], function() {
 
-Route::group([], function() {
+	Route::get('/', 'HomeController@index')->name('index');
+	
 
 });
 

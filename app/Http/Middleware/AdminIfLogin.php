@@ -16,9 +16,9 @@ class AdminIfLogin
      */
     public function handle($request, Closure $next, $guard='admin')
     {
-        // if($request->user($guard)) {
-        //     return redirect()->route('admin.dashboard');
-        // }
+        if($request->user($guard)) {
+            return redirect()->route('admin.dashboard');
+        }
         return $next($request);
     }
 }

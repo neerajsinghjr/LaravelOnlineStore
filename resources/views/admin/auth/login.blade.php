@@ -17,6 +17,13 @@
     <link href="{{ asset('admins/asset/css/style.css') }}" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="{{ asset('admins/asset/css/colors/default-dark.css') }}" id="theme" rel="stylesheet">
+    <style>
+        .login-img {
+            background-image: url('admins/asset/images/background/login.jpg');
+            background-position: left top;
+            background-size: cover;
+        }
+    </style>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,22 +44,28 @@
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
     <section id="wrapper">
-        <div class="login-register" style="background-image:url("{{ asset('admins/asset/images/background/login-register.jpg') }}">        
+        <div class="login-register login-img">        
             <div class="login-box card">
             <div class="card-block">
                 <!--============================ Admin Login Form =========================-->
-                <form action="index.html" method="post" class="form-horizontal form-material" id="loginform">
+                <form action="{{ route('admin.submit') }}" method="post" class="form-horizontal form-material" id="loginform">
                     {{ csrf_field() }}
                     <h3 class="box-title m-b-20">Sign In</h3>
                     <div class="form-group ">
                         <div class="col-xs-12">
                             <input name="email" class="form-control" type="text" required="" placeholder="Email"> 
                         </div>
+                        @error('email')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
                             <input name="password" class="form-control" type="password" required="" placeholder="Password"> 
                         </div>
+                        @error('password')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
@@ -79,7 +92,7 @@
                 </form>
 
                 <!--============================ Admin Recover Form =========================-->
-                <form class="form-horizontal" id="recoverform" action="index.html">
+                <form action="" method="post" class="form-horizontal" id="recoverform">
                     {{ csrf_field() }}
                     <div class="form-group ">
                         <div class="col-xs-12">
